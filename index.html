@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ghost Busting — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Ghost Busting Co.</h1>
+      <nav>
+        <a class="btn ghost" href="signup.html">Sign In</a>
+        <a class="btn" href="register.html">Register</a>
+      </nav>
+      
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h2>Professional Ghost Removal Services</h2>
+        <p>Discreet, effective, and safe ghost-busting for homes and businesses. Book a consultation or create an account to get started.</p>
+        <div class="cta">
+          <a class="btn" href="register.html">Create Account</a>
+          <a class="btn ghost" href="signup.html">Sign In</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden>
+        <div class="radar" id="radar">
+          <div class="radar-scan" id="radar-scan"></div>
+          <div class="radar-grid"></div>
+          <div class="radar-blips" id="radar-blips" aria-hidden="true"></div>
+          <div class="radar-controls">
+            <button id="radar-toggle" class="btn">Start Scan</button>
+            <button id="radar-clear" class="btn ghost">Clear</button>
+            <button id="radar-sound-toggle" class="btn ghost" aria-pressed="false">Sound On</button>
+            <label class="radar-volume">
+              <span class="sr-only">Volume</span>
+              <input id="radar-volume" type="range" min="0" max="1" step="0.05" value="0.6">
+            </label>
+          </div>
+        </div>
+        <div class="film-grain" aria-hidden></div>
+        <div class="spider-overlay" aria-hidden="true"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Ghost Busting Co. — All rights reserved.</div>
+  </footer>
+</body>
+</html>
